@@ -26,12 +26,11 @@
 
 using namespace std;
 
-void main()
+int main()
 {
-    const int NUMBER_OF_EMP = 3;
     
     // Create employee object
-    Employee emp1(), emp2(), emp3()
+    Employee emp1, emp2, emp3;
     
     // set the values
     emp1.setName("Susan Meyer");
@@ -50,40 +49,14 @@ void main()
     emp3.setID(81774);
     
     // display the values
-    empl.displayTable();
+    emp1.displayInfo();
+    emp2.displayInfo();
+    emp3.displayInfo();
     
-    cout << "\n\n";
-    system("pause");
+    cout << "\n\nEND";
+    
+    return 0;
     
 }
 
 
-
-/*
- // Create Employee object
- Employee empObject;
- string name, dept, pos;
- int idNum;
- 
- // set name
- cout << "\nEnter the employee's name: ";
- cin >> name;
- empObject.setName(name);
- 
- // set department
- cout << "\nEnter the department the employee works in: ";
- cin >> dept;
- empObject.setDept(dept);
- 
- // set position
- cout << "\nEnter the employee's postion: ";
- cin >> pos;
- empObject.setPosit(pos);
- 
- // set employee ID
- cout << "\nEnter the employee's ID number: ";
- cin >> idNum;
- empObject.setID(idNum);
- 
- 
-*/

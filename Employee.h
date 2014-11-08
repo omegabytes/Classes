@@ -9,8 +9,9 @@
 #ifndef EMPLOYEE_H
 #define EMPLOYEE_H
 
-#include <stdio.h>
 #include <string>
+
+using namespace std;
 
 class Employee
 {
@@ -25,12 +26,12 @@ public:
     void setPosit(string);      // set the position
     void setID(int);            // set the employee ID
     
-    void getName() const;       // returns the name
-    void getDept() const;       // retutns the department
-    void getPosit() const;      // returns the position
+    string getName() const;       // returns the name
+    string getDept() const;       // retutns the department
+    string getPosit() const;      // returns the position
     int  getID() const;         // returns the emplyee ID
     
-    void displayTable() const;  // displays the employee info
+    void displayInfo() const;  // displays the employee info
     
 };
 

@@ -31,16 +31,16 @@ void Employee::setName(string empName)
 }
 
 // set department
-void Employee::setDept(string department)
+void Employee::setDept(string dept)
 {
-    dept = department;
+    department = dept;
     
 }
 
 // set position
-void Employee::setPosition(string position)
+void Employee::setPosit(string posit)
 {
-    posit = position;
+    position = posit;
     
 }
 
@@ -52,21 +52,21 @@ void Employee::setID(int id)
 }
 
 // return name
-void Employee::getName() const
+string Employee::getName() const
 {
     return name;
 }
 
 // return department
-void Employee::getDept() const
+string Employee::getDept() const
 {
-    return dept;
+    return department;
 }
 
 // return position
-void Employee::getPosit() const
+string Employee::getPosit() const
 {
-    return posit;
+    return position;
 }
 
 // return ID
@@ -76,15 +76,14 @@ int  Employee::getID() const
 }
 
 // Display the info
-void Employee::displayTable() const
+void Employee::displayInfo() const
 {
-    for(int i=0; i<NUMBER_OF_EMP; i++0)
-    {
-        cout << empl[i].getName() << " ";
-        cout << empl[i].getID() << " ";
-        cout << empl[i].getDept() << " ";
-        cout << empl[i].getPosit() << endl;
-    }
+    
+    cout << setw(12) << left << getName() << " ";
+    cout << setw(6) << left << getID() << " ";
+    cout << setw(15) << left << getDept() << " ";
+    cout << setw(10) << left << getPosit() << endl;
+    
 }
 
 
