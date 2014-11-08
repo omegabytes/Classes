@@ -31,11 +31,23 @@ void main()
     const int NUMBER_OF_EMP = 3;
     
     // Create employee object
-    Employee empl[NUMBER_OF_EMP] = {
-        Employee("Susan Meyers","Accounting","Vice President",47899),
-        Employee("Mark Jones","IT","Programmer",39119),
-        Employee("Joy Rogers","Manufacturing","Engineer",81774)
-    };
+    Employee emp1(), emp2(), emp3()
+    
+    // set the values
+    emp1.setName("Susan Meyer");
+    emp1.setDept("Accounting");
+    emp1.setPosit("Vice President");
+    emp1.setID(47899);
+
+    emp2.setName("Mark Jones");
+    emp2.setDept("IT");
+    emp2.setPosit("Programmer");
+    emp2.setID(39119);
+    
+    emp3.setName("Joy Rogers");
+    emp3.setDept("Manufacturing");
+    emp3.setPosit("Engineer");
+    emp3.setID(81774);
     
     // display the values
     empl.displayTable();
